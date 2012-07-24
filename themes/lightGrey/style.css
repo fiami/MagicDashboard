@@ -1,0 +1,26 @@
+.magicdashboard {
+	background: url(bg.jpg) 0 0 fixed;
+}
+
+h2 {
+	font-size: 10px;
+	color: #aaa;
+	background-color: #eee;
+	padding: 3px;
+	margin-top: -5px;
+	margin-left: -5px;
+	margin-right: -5px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.wctcontainer {
+	background-color: #fff;
+}
+
+.wctcontainerborder {
+	background-color: rgba(240, 240, 240, 0.6);
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
