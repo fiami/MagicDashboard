@@ -19,13 +19,13 @@
 			widgetData.clr = '<?= $color ?>';
 			widgetData.paper.circleShadow = widgetData.paper.path();
 			widgetData.paper.circleShadow.attr({
-				segment: [125, 70, 70, 180, 360],
-				stroke: "#fff",
+				segment: [127, 70, 68, 180, 360],
+				stroke: "#ddd",
 				fill: "#ddd"
 			});
 			widgetData.paper.circle = widgetData.paper.path();
 			widgetData.paper.circle.attr({
-				segment: [125, 70, 70, 180, 300], stroke: "#fff",
+				segment: [127, 70, 68, 180, 300], stroke: "#fff",
 				fill: widgetData.clr
 			});
 
