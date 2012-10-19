@@ -110,7 +110,7 @@ class MagicDashboardRenderer {
 		ob_start();
 		$color = MagicDashboard::getRandomColor();
 		require(__DIR__."/widgettypes/".$parentClass."/template.php");
-		$content.= ob_get_contents();
+		$content = ob_get_contents();
 		ob_end_clean();
 		
 		// return rendered widget
