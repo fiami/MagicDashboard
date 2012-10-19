@@ -14,12 +14,13 @@ $widgetsConfig = array(
 		"name" => "HttpPing",
 		"update" => 2,
 		"caption" => "Ping auf google / 1ms = 10%"
-	),
+	)
 );
 
 // print header header
 echo "<html>
 	<head>
+		<meta charset='utf-8'/>
 		<title>Magic Dashboard</title>
 		".MagicDashboardRenderer::staticIncludeTags('..')."
 	</head>
