@@ -8,7 +8,7 @@ MagicDashboard.registerUpdate(
 
 		
 		var perc = data.number; // (100 / 250 * (250 / 5 * data.number));
-		var description = typeof data.caption != 'undefined' ? data.caption : perc+"%";
+		var description = typeof data.description != 'undefined' ? data.description : perc+"%";
 
 		widgetData.paper.caption.remove();
 		widgetData.paper.caption = widgetData.paper.text(125, 85, ''+description).attr(
