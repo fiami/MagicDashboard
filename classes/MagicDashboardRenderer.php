@@ -61,7 +61,7 @@ class MagicDashboardRenderer {
 					);
 					
 					$rendered.= "<script>$(document).ready(function() {";
-					$rendered.= "MagicDashboard.update('".$id."', jQuery.parseJSON('".json_encode($widget->getViewData())."'));";
+					$rendered.= "MagicDashboard.update('".$id."', jQuery.parseJSON('".str_replace('\\', '\\\\', json_encode($widget->getViewData()))."'));";
 					$rendered.= "});</script>";
 				}
 
@@ -101,7 +101,7 @@ class MagicDashboardRenderer {
 		ob_start();
 		$jscontent = "<script>";
 		$jscontent.= "MagicDashboard.currentWidget='".$id."';";
-		$jscontent.= "MagicDashboard.widgetSettings['".$id."'] = jQuery.parseJSON('".json_encode($options)."');";
+		$jscontent.= "MagicDashboard.widgetSettings['".$id."'] = jQuery.parseJSON('".str_replace('\\', '\\\\', json_encode($options))."');";
 		$jscontent.= file_get_contents(__DIR__."/widgettypes/".$parentClass."/script.js");
 		$jscontent.= "</script>";
 		ob_end_clean();
