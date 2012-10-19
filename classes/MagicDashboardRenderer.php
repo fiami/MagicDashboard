@@ -108,7 +108,7 @@ class MagicDashboardRenderer {
 		
 		// render template
 		ob_start();
-		$color = MagicDashboard::getRandomColor();
+		$color = isset($options['color']) ? $options['color'] : MagicDashboard::getRandomColor();
 		require(__DIR__."/widgettypes/".$parentClass."/template.php");
 		$content = ob_get_contents();
 		ob_end_clean();
